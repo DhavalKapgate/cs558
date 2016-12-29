@@ -1,21 +1,21 @@
-Name 					: 	Dhaval Kapgate, Amar Dharmendra Kumar
+Name 				: 	Dhaval Kapgate, Amar Dharmendra Kumar
 Email address   		:	dkapgat1@binghamton.edu, akumar14@binghamton.edu
-Programming Language 	: 	JAVA
-Platform				: 	Bingsuns
-Reference				:	https://javadigest.wordpress.com/2012/08/26/rsa-encryption-example/ 
-							http://www.c-sharpcorner.com/UploadFile/5fd9bd/digital-signature-with-plain-text-in-java/
-							http://elmurod.net/en/index.php/archives/492
+Programming Language 		: 	JAVA
+Platform			: 	Bingsuns
+Reference			:	https://javadigest.wordpress.com/2012/08/26/rsa-encryption-example/ 
+					http://www.c-sharpcorner.com/UploadFile/5fd9bd/digital-signature-with-plain-text-in-java/
+					http://elmurod.net/en/index.php/archives/492
 Execution steps:
-						1.Use make to get all the class files (Bank.java Psystem.java Customer.java are compiled).
-						2.The bank server is invoked as:    - java Bank <bank-port>
-						3.The purchasing server is invoked as: - java Psystem <purchasing-port> <bank-domain> <bank-port>
-						4.The client is invoked as: - java Customer <purchasing-domain> <purchasing-port>
-						5.To clean/remove class files : make clean
+					1.Use make to get all the class files (Bank.java Psystem.java Customer.java are compiled).
+					2.The bank server is invoked as:    - java Bank <bank-port>
+					3.The purchasing server is invoked as: - java Psystem <purchasing-port> <bank-domain> <bank-port>
+					4.The client is invoked as: - java Customer <purchasing-domain> <purchasing-port>
+					5.To clean/remove class files : make clean
 
 
 code for encryption/decrption:
 	1.In Customer.java
-						public static String Hashing(String text)throws Exception
+					public static String Hashing(String text)throws Exception
 					   {
 						  MessageDigest md = MessageDigest.getInstance("MD5");
 						  Formatter form = new Formatter();
@@ -156,9 +156,5 @@ code for encryption/decrption:
 						}
 						return new String(decrypt);
 					}
-
-Anything special about our submission that TA should/can take note of:
-				1.In case of item with 0 quanity is ordered the client/Customer.java would exit.
-				2.In case of invalid item# user is asked to re-enter the item-no.
 
 
